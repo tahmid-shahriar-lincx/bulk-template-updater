@@ -20,9 +20,9 @@ async function main () {
       .map(campaign => campaign.template.id)
 
     const templatesNeedingUpdate = templates
-      .filter(template => !activeTemplatesForUpdate.includes(template.id))
+      .filter(template => activeTemplatesForUpdate.includes(template.id))
 
-    console.log('Templates needing update:', templatesNeedingUpdate.length)
+    console.log('Templates needing update:', templatesNeedingUpdate)
     writeJsonToFile('templates-needing-update.json', templatesNeedingUpdate)
 
     for (const template of templatesNeedingUpdate) {
