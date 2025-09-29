@@ -1,0 +1,23 @@
+{
+  "name": "bulk-template-updater",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "standard && node test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "axios": "^1.12.2",
+    "dotenv": "^17.2.2"
+  },
+  "devDependencies": {
+    "sinon": "^21.0.0",
+    "standard": "^17.1.2",
+    "tape": "^5.9.0"
+  }
+}
